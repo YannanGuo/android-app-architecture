@@ -33,6 +33,6 @@ Presenter不直接操作数据（更新数据状态），需要调用Model操作
 注意：Model层不同于Java的Bean类，它包含类业务逻辑和数据的处理，它会把数据处理程POJO对象送往Presenter层。
 
 ##二 MVP最佳实现
-##2.1 Activity生命周期
+###2.1 Activity生命周期
 
 Activity是一个上帝类，其实不适合作为View。我们可以在顶级父类中将Activity的生命周期在Presenter中实现一遍，然后生命周期有关的业务逻辑直接由Presenter来实现。
