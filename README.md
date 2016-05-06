@@ -4,7 +4,7 @@
     次项目拓展与Google关于Android应用开发架构的建议[android-architecture](https://github.com/googlesamples/android-architecture)。讨论MVP
 开发模式在Android应用开发上的实践。
 
-##一 MVP框架
+##一 MVP框架原理
 
 ![](https://github.com/guoxiaoxing/android-mvp-architecture-pratice/blob/master/image/mvp.png)
 
@@ -32,3 +32,7 @@ Presenter不直接操作数据（更新数据状态），需要调用Model操作
 3. 对数据的临时存储,管理，协调上层数据请求。
 注意：Model层不同于Java的Bean类，它包含类业务逻辑和数据的处理，它会把数据处理程POJO对象送往Presenter层。
 
+##二 MVP最佳实现
+##2.1 Activity生命周期
+
+Activity是一个上帝类，其实不适合作为View。我们可以在顶级父类中将Activity的生命周期在Presenter中实现一遍，然后生命周期有关的业务逻辑直接由Presenter来实现。
