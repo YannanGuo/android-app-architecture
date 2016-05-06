@@ -13,4 +13,5 @@ package com.guoxiaoxing.mvp.model.base;
  * 16/5/6 下午2:39     guoxiaoxing            1.0                  Model层
  */
 public class BaseModel {
+
 }  
