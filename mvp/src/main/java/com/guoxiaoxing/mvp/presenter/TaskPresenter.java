@@ -4,6 +4,8 @@ import com.guoxiaoxing.mvp.interfaces.ITask;
 import com.guoxiaoxing.mvp.model.TaskModel;
 import com.guoxiaoxing.mvp.presenter.base.BasePresenter;
 
+import javax.inject.Inject;
+
 /**
  * Author: guoxiaoxing
  * Email: guoxiaoxingv@163.com
@@ -18,22 +20,22 @@ import com.guoxiaoxing.mvp.presenter.base.BasePresenter;
  */
 public class TaskPresenter extends BasePresenter implements ITask.IPresenter {
 
-
-    private final TaskModel mTaskModel;
     private final ITask.IView mTaskView;
 
     /**
      * 用数据仓库和显示层构造Presenter层
      *
-     * @param taskModel TaskModel
      * @param taskView  ITask.IView
      */
-    public TaskPresenter(TaskModel taskModel, ITask.IView taskView) {
-        mTaskModel = taskModel;
+    @Inject
+    public TaskPresenter(ITask.IView taskView) {
         mTaskView = taskView;
-        mTaskView.setPresenter(this);
     }
 
+    @Inject
+    public void setupPresenter() {
+        mTaskView.setPresenter(this);
+    }
 
     @Override
     public void start() {

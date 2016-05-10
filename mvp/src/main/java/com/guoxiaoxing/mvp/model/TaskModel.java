@@ -15,4 +15,5 @@ import com.guoxiaoxing.mvp.model.base.BaseModel;
  * 16/5/6 下午3:08     guoxiaoxing           1.0
  */
 public class TaskModel extends BaseModel{
+
 }  

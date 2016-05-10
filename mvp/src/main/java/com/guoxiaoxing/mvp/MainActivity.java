@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Transition;
 
+import com.guoxiaoxing.mvp.di.DaggerTaskPresenterComponent;
+import com.guoxiaoxing.mvp.di.TaskPresenterModule;
 import com.guoxiaoxing.mvp.model.TaskModel;
 import com.guoxiaoxing.mvp.presenter.TaskPresenter;
 import com.guoxiaoxing.mvp.view.TaskFragment;
@@ -37,7 +39,11 @@ public class MainActivity extends AppCompatActivity implements TaskFragment.OnFr
         //创建Presenter，这里将mTaskFragment（View）传递给Presenter，这里并没
         //有立即加载数据，这里将mTaskFragment（View）初始化完成，当mTaskFragment
         //初始化完成后，会调用Presenter中国年的方法来加载数据。
-        mTaskPresenter = new TaskPresenter(new TaskModel(), mTaskFragment);
+        mTaskPresenter = DaggerTaskPresenterComponent
+                .builder()
+                .taskPresenterModule(new TaskPresenterModule(mTaskFragment))
+                .build()
+                .getTaskPresenter();
     }
 
     @Override
