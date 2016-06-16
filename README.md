@@ -12,10 +12,8 @@
 1. 安装插件  
 Mac:
 把MVPFragment, MVPActivity 和 MVPBoilerplate三个目录拷贝到**$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/**里面。  
-
 Windows:
 把MVPFragment, MVPActivity 和 MVPBoilerplate三个目录拷贝到**$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\activities\**里面。
-
 2. 生成基础模版
 首先，在包的根目录使用MVP Boilerplate创建基本的结构。这个操作对一个项目只需执行一次：
 ![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/create_boilerplate.png)
