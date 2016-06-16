@@ -4,6 +4,7 @@
     次项目讨论MVP开发模式在Android应用开发上的实践方式，旨在构建可拆解，低耦合的程序组织方式。
 #一 前提条件
 1. 你的工程的包结构应该满足以下结构：
+
 ![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/mvp_package_structure.png)
 2. 你必须使用 Dagger 2 作为依赖注入，AppCompat用作注释和基类。
 
@@ -16,6 +17,7 @@
 
 2. 创建第一个Activity
 然后你可以使用 MVP Activity创建一个新的 MVP Activity，它将创建：
+
 - 一个 Activity
 - 一个Activity的布局
 - 用于Dagger 2注入的一个Component和一个 Module 
@@ -60,4 +62,5 @@ Activity是一个上帝类，其实不适合作为View。我们可以在顶级�
 
 #Thanks
 [android-architecture](https://github.com/googlesamples/android-architecture) - A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
+
 [Android-Studio-MVP-template](https://github.com/benoitletondor/Android-Studio-MVP-template) - Android MVP template for Android Studio
