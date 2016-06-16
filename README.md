@@ -5,7 +5,7 @@
 #一 前提条件
 1. 你的工程的包结构应该满足以下结构：
 
-![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/mvp_package_structure.png) 
+![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/mvp_package_structure.png)   
 2. 你必须使用 Dagger 2 作为依赖注入，AppCompat用作注释和基类。
 
 #二 使用方法
