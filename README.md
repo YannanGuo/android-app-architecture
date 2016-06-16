@@ -9,7 +9,7 @@
 2. 你必须使用 Dagger 2 作为依赖注入，AppCompat用作注释和基类。
 
 #二 使用方法
-1. 安装插件
+1. 安装插件  
 Mac:
 把MVPFragment, MVPActivity 和 MVPBoilerplate三个目录拷贝到$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/里面。  
 Windows:
