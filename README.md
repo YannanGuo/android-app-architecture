@@ -5,7 +5,7 @@
 #一 前提条件
 1. 你的工程的包结构应该满足以下结构：
 
-![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/mvp_package_structure.png)
+![](https://github.com/guoxiaoxing/android-mvp-architecture-practice/blob/master/image/mvp_package_structure.png) 
 2. 你必须使用 Dagger 2 作为依赖注入，AppCompat用作注释和基类。
 
 #二 使用方法
@@ -61,6 +61,5 @@ Presenter不直接操作数据（更新数据状态），需要调用Model操作
 Activity是一个上帝类，其实不适合作为View。我们可以在顶级父类中将Activity的生命周期在Presenter中实现一遍，然后生命周期有关的业务逻辑直接由Presenter来实现。
 
 #Thanks
-[android-architecture](https://github.com/googlesamples/android-architecture) - A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
-
+[android-architecture](https://github.com/googlesamples/android-architecture) - A collection of samples to discuss and showcase different architectural tools and patterns for Android apps. 
 [Android-Studio-MVP-template](https://github.com/benoitletondor/Android-Studio-MVP-template) - Android MVP template for Android Studio
