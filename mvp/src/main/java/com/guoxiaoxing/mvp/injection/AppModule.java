@@ -5,6 +5,8 @@ import android.support.annotation.NonNull;
 
 import com.guoxiaoxing.mvp.MvpApplication;
 
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -18,11 +20,13 @@ public final class AppModule {
     }
 
     @Provides
+    @Singleton
     public Context provideAppContext() {
         return mApp;
     }
 
     @Provides
+    @Singleton
     public MvpApplication provideApp() {
         return mApp;
     }
