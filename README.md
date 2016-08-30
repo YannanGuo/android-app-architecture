@@ -33,5 +33,6 @@ Windows:
 **注意**：从包的根路径去创建非常重要，否则将在子路径下重复生成整改MVP结构，这当然不是你想要的。
 
 #Thanks
+
 [android-architecture](https://github.com/googlesamples/android-architecture) - A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.  
 [Android-Studio-MVP-template](https://github.com/benoitletondor/Android-Studio-MVP-template) - Android MVP template for Android Studio
