@@ -1,11 +1,9 @@
-package com.guoxiaoxing.mvp.injection;
+package com.guoyannan.mvp.injection;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.guoxiaoxing.mvp.MvpApplication;
-
-import javax.inject.Singleton;
+import com.guoyannan.mvp.App;
 
 import dagger.Module;
 import dagger.Provides;
@@ -13,21 +11,19 @@ import dagger.Provides;
 @Module
 public final class AppModule {
     @NonNull
-    private final MvpApplication mApp;
+    private final App mApp;
 
-    public AppModule(@NonNull MvpApplication app) {
+    public AppModule(@NonNull App app) {
         mApp = app;
     }
 
     @Provides
-    @Singleton
     public Context provideAppContext() {
         return mApp;
     }
 
     @Provides
-    @Singleton
-    public MvpApplication provideApp() {
+    public App provideApp() {
         return mApp;
     }
 }

@@ -17,7 +17,7 @@ public final class ${appClass} extends Application
         super.onCreate();
 
         mAppComponent = DaggerAppComponent.builder()
-            .appModule(new AppModule(this))
+            .applicationModule(new AppModule(this))
             .build();
     }
 

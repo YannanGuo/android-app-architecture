@@ -89,7 +89,7 @@ public abstract class BaseFragment extends Fragment
     /**
      * Setup the injection component for this view
      *
-     * @param appComponent the app component
+     * @param applicationComponent the app component
      */
-    protected abstract void setupComponent(@NonNull AppComponent appComponent);
+    protected abstract void setupComponent(@NonNull AppComponent applicationComponent);
 }

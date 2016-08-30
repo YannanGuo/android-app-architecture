@@ -38,7 +38,7 @@ public final class ${activityClass} extends BaseFragment implements ${viewClass}
     protected void setupComponent(@NonNull AppComponent parentComponent) 
     {
         Dagger${componentClass}.builder()
-            .appComponent(parentComponent)
+            .applicationComponent(parentComponent)
             .${moduleClass?uncap_first}(new ${moduleClass}(this))
             .build()
             .inject(this);

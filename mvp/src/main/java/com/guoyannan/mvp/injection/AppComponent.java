@@ -1,8 +1,8 @@
-package com.guoxiaoxing.mvp.injection;
+package com.guoyannan.mvp.injection;
 
 import android.content.Context;
 
-import com.guoxiaoxing.mvp.MvpApplication;
+import com.guoyannan.mvp.App;
 
 import javax.inject.Singleton;
 
@@ -13,5 +13,5 @@ import dagger.Component;
 public interface AppComponent {
     Context getAppContext();
 
-    MvpApplication getApp();
+    App getApp();
 }

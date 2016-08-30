@@ -1,5 +1,9 @@
 #Android MVP开发模式最佳实践
+
 本项目讨论MVP开发模式在Android应用开发上的实践方式，旨在构建可拆解，低耦合的程序组织方式。这里提供拉一个一键生成MVP模板代码的插件，更多关于MVP实现原理的讨论请参见https://github.com/guoxiaoxing/android-mvp-architecture-practice/tree/master/doc
+
+![](https://github.com/YannanGuo/android-mvp-architecture-practice/blob/master/art/android_architecture.png)
+
 
 #一 前提条件
 1. 你的工程的包结构应该满足以下结构：

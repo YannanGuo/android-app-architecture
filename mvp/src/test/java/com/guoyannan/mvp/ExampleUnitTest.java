@@ -1,4 +1,4 @@
-package com.guoxiaoxing.mvp;
+package com.guoyannan.mvp;
 
 import org.junit.Test;
 
