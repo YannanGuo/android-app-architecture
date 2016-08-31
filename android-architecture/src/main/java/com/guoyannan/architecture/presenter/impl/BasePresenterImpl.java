@@ -11,9 +11,7 @@ import com.guoyannan.architecture.presenter.BasePresenter;
  * @param <V>
  */
 public abstract class BasePresenterImpl<V> implements BasePresenter<V> {
-    /**
-     * The view
-     */
+
     @Nullable
     protected V mView;
 

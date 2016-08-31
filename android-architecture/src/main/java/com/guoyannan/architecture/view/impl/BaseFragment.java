@@ -8,14 +8,16 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 
 import com.guoyannan.architecture.App;
-import com.guoyannan.architecture.presenter.loader.PresenterFactory;
-import com.guoyannan.architecture.presenter.loader.PresenterLoader;
 import com.guoyannan.architecture.injection.AppComponent;
 import com.guoyannan.architecture.presenter.BasePresenter;
+import com.guoyannan.architecture.presenter.loader.PresenterFactory;
+import com.guoyannan.architecture.presenter.loader.PresenterLoader;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class BaseFragment<P extends BasePresenter<V>, V> extends Fragment implements LoaderManager.LoaderCallbacks<P> {
+public abstract class BaseFragment<P extends BasePresenter<V>, V> extends Fragment
+        implements LoaderManager.LoaderCallbacks<P> {
+
     private final static String RECREATION_SAVED_STATE = "recreation_state";
     private final static String LOADER_ID_SAVED_STATE = "loader_id_state";
     /**
@@ -23,15 +25,15 @@ public abstract class BaseFragment<P extends BasePresenter<V>, V> extends Fragme
      * Will be true if presenter wasn't loaded when {@link #onStart()} is reached
      */
     private final AtomicBoolean mNeedToCallStart = new AtomicBoolean(false);
-    /**
-     * The presenter for this view
-     */
+
     @Nullable
     protected P mPresenter;
+
     /**
-     * Is this the first start of the fragment (after onCreate)
+     * Fragment是否是第一次启动(after onCreate)
      */
     private boolean mFirstStart;
+
     /**
      * Unique identifier for the loader, persisted across re-creation
      */
