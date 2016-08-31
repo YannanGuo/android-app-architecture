@@ -8,8 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android-architecture" />
-            <option value="$PROJECT_DIR$/mvp-template" />
+            <option value="$PROJECT_DIR$/android-architecture-mvp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
