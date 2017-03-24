@@ -1,1 +1,1 @@
-include ':android-architecture-mvp'
+include ':app'

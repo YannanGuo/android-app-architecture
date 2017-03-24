@@ -1,4 +1,0 @@
-#MVP框架最佳实现之View层
-
-#一 Activity生命周期
-Activity是一个上帝类，其实不适合作为View。我们可以在顶级父类中将Activity的生命周期在Presenter中实现一遍，然后生命周期有关的业务逻辑直接由Presenter来实现。
